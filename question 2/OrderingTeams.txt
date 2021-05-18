@@ -1,0 +1,49 @@
+//importing scanner class to take the input from the user
+import java.util.Scanner;
+public class OrderingTeams {
+	public static void main(String[] args) {
+	//creating new object of scanner class
+		Scanner sc = new Scanner(System.in);
+		//taking length of array
+		System.out.println("Enter the length of the array string");
+		int length = sc.nextInt();
+		System.out.println("Enter the strings in numerics only");
+		String[] arr= new String[length];
+		for(int i=0;i<arr.length;i++)
+		{
+			arr[i]=sc.next();
+		}	
+		toPrint(arr);
+	}
+	//displaying s[i]
+	 public static void toPrint(String[] s)
+	 {
+		 int count=0;
+		 for(int i=0;i<s.length;i++)
+		 {
+			 toDisplay(s[i]);
+		
+	     }
+	 }
+	 /* The oder should be out of three digits two are odd one should be odd .if it 
+ * is exist then the oder should be "yes" or else the order shuould be "no".*/
+	 public static void toDisplay(String s)
+	 {   int count=0;
+		char[] ch=s.toCharArray();
+		for(int i=0;i<ch.length;i++)
+		{
+			if(ch[i]%2!=0)
+			{
+				count++;
+			}
+		}
+		if(count==2)
+		{
+			System.out.println("yes");
+		}
+		else
+		{
+			System.out.println("no");
+		}
+	 }
+	 }

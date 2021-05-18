@@ -1,0 +1,14 @@
+Pseudo code
+
+
+PROGRAM OrderingTeams
+
+step1: take input from the user
+step2: take the array length
+step3: enter the array
+step4: check 1<=i<=2.
+
+step5: i+1-th strictly better
+step6: integer in three skills
+step6:  The oder should be out of three digits two are odd one should be odd .if it 
+            is exist then the oder should be "yes" or else the order shuould be "no"
